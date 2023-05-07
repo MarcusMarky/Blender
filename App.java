@@ -3,21 +3,18 @@ public class App {
     
 Blender portableBlender = new Blender();
 
-Fruit smallApple  = new Apple( 50);
-Fruit bigApple    = new Apple(200);
+Fruit apple    = new Apple(200);
 
-Fruit smallOrange = new Orange(30);
-Fruit bigOrange   = new Orange(500);
+Fruit orange   = new Orange(500);
 
 Fruit banana = new Banana(100);
 
-Juice smallAppleJuice = portableBlender.blend(smallApple);
-System.out.println(smallAppleJuice.volume);
+Fruit orangeApple = new OrangeApple(600);
 
-Juice bigAppleJuice = portableBlender.blend(bigApple);
-System.out.println(bigAppleJuice.volume);
+apple.printVitamins();
+orange.printVitamins();
+banana.printVitamins();
+orangeApple.printVitamins();
 
-   
-   
 } 
 }
